@@ -1,5 +1,12 @@
-const yo = require('yo-yo')
+import React from 'react'
+// import yo from 'yo-yo'
+// const yo = require('yo-yo')
 
-module.exports = function Hello (name) {
-  return yo`<h1>Hello, ${name}!</h1>`
+const Hello = function (props) {
+  // return yo`<h1>Hello, ${name}!</h1>`
+  return (
+    <h1>Hello, {props.name}</h1>
+  )
 }
+
+export default Hello
